@@ -1,0 +1,203 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Muli:wght@500;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    background-color: hsl(210, 60%, 98%);
+    color: hsl(219, 85%, 26%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 45%;
+    padding: 2% 2% 0;
+    margin: 5% auto;
+    border-radius: 2%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+.header h3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5px;
+    color: hsl(224, 21%, 14%);
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.header span {
+    background-color: hsl(219, 85%, 26%);
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.header p {
+    font-size: 17px;
+}
+
+.header p:hover {
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 16.5px;
+}
+
+.notifications-tab {
+    margin: 2% 0;
+    font-size: 16.5px;
+}
+
+.notifications-info {
+    display: flex;
+    align-items: center;
+}
+
+.notifications-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+span {
+    font-weight: 800;
+}
+
+span.name {
+    color: hsl(224, 21%, 14%);
+    font-size: 17px;
+}
+
+span.item {
+    color: hsl(219, 12%, 42%);
+}
+
+span.chess {
+    color: hsl(219, 85%, 26%);
+    font-size: 17px;
+}
+
+.name,.item,.chess:hover {
+    cursor: pointer;
+}
+
+.name:hover,
+.item:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+p.date {
+    color: hsl(219, 14%, 63%);
+}
+
+.notifications-unread {
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 7px;
+}
+
+.notifications-unread p:first-child {
+    position: relative;
+}
+
+.notifications-unread p:first-child::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    position: absolute;
+    right: -15px;
+    top: 45%;
+}
+
+.private-message {
+    border: 1px solid hsl(211, 68%, 94%);
+    border-radius: 5px;
+    padding: 3%;
+    margin: 3% auto;
+}
+
+.private-message:hover {
+    cursor: pointer;
+    background-color: hsl(205, 33%, 90%);
+}
+
+.pictured-comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pictured-comment img {
+    margin: unset;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        margin: 0;
+        padding: 5%;
+        width: 100%;
+        border-radius: unset;
+        background-color: #fff;
+        box-shadow: none;
+    }
+
+    body {
+        background-color: #fff;
+    }
+
+    .header h3 {
+        font-size: 16px;
+    }
+
+    .header span, .header p {
+        font-size: 13px;
+    }
+
+    .notifications-tab {
+        font-size: 12.5px;
+        width: 100%;
+    }
+
+    span.name, span.chess {
+        font-size: 13px;
+    }
+}
