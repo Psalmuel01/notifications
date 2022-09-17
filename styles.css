@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 100vh;
+    margin: auto;
 }
 
 img {
@@ -192,6 +192,10 @@ p.date {
         font-size: 13px;
     }
 
+    .header p:hover {
+        font-size: 12.5px;
+    }
+
     .notifications-tab {
         font-size: 12.5px;
         width: 100%;
@@ -199,5 +203,9 @@ p.date {
 
     span.name, span.chess {
         font-size: 13px;
+    }
+
+    .notifications-unread p:first-child::after {
+        right: -10px;
     }
 }
