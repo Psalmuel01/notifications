@@ -15,7 +15,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    min-height: 100vh;
 }
 
 img {
@@ -120,11 +120,11 @@ p.date {
     border-radius: 7px;
 }
 
-.notifications-unread p:first-child {
+.notifications-unread span.dot {
     position: relative;
 }
 
-.notifications-unread p:first-child::after {
+.notifications-unread span.dot::after {
     content: '';
     width: 7px;
     height: 7px;
@@ -203,9 +203,5 @@ p.date {
 
     span.name, span.chess {
         font-size: 13px;
-    }
-
-    .notifications-unread p:first-child::after {
-        right: -10px;
     }
 }
